@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Furuvikin Sauna</title>
+  <link rel="stylesheet" href="Styling.css">
+</head>
+<body>
+   <!-- Header with Navigation -->
+   <header>
+    <a href="Index.html" class="logo">
+      <img src="images/logo.png" alt="Hidden Heat Logo" class="logo">
+    </a>
+    <nav class="nav-links">
+      <a href="Sompasauna.html" class="active">Sompasauna</a>
+      <a href="Allas.html">Allas Sea Pool</a>
+      <a href="Furuvik.html">Furuvik's Sauna</a>
+    </nav>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </header>
+
+      <section class="big-picture">
+        <img src="images/Furuvik7.png" alt="A beautiful sauna view">
+        <div class="overlay-text">
+          <h1>Furuvik's Sauna</h1>
+        </div>
+      </section>
+
+<!-- Visitor Calculator Section -->
+<section class="visitor-calculator">
+  <h1>Curious about the visitor flow?</h1>
+  <label for="time">What time are you planning to go? (24-hour format):</label>
+  <input type="number" id="time" min="0" max="23" placeholder="Enter hour (0-23)" required>
+  <button onclick="calculateVisitorTime()">Check Visitor Time</button>
+  <p id="result"></p>
+</section>
+
+<section class="content">
+  <div class="content-container">
+      <p><b>Discover Furuvik's Rantasauna: Helsinki's year-round authentic sauna</b></p>
+         <p>Escape to Furuvik Rantasauna, a one-of-a-kind beach sauna experience in Helsinki. 
+          Open all year round, this sauna offers a refreshing and rejuvenating retreat with open sauna 
+          and swimming sessions available almost every day. Whether it's winter's chill or 
+          the warmth of summer, you can always take a plunge in the sea after your sauna session.</p>
+          <p>Tickets for Furuvik Rantasauna are available through the Saunat.fi ticket shop, 
+            and with a limited number of tickets per session, you’re guaranteed a peaceful 
+            and intimate experience. Swim in the sea any time of year, with easy access from 
+            a pier equipped with sturdy stairs. In the winter, an opening pump ensures the water 
+            remains accessible, no matter the season.</p>
+          <p>After your sauna, rinse off in the shower room, featuring two showers and 
+            a small changing room. For more space, head to the changing room trolley, 
+            which includes lockers to safely store your valuables while you unwind.
+            Furuvik Rantasauna offers the perfect combination of Finnish sauna tradition 
+            and the refreshing beauty of the sea—an ideal spot to relax, recharge, and embrace the elements. 
+            Book your session today!</p>
+
+    <!-- CTA Button -->
+    <a href="https://saunat.fi/en/places/villa-furuvik-rantasauna" target="_blank" class="cta-button">Book your escape</a>
+  </div>
+</section>
+
+<!-- Sauna Info Section -->
+<section class="sauna-info">
+  <div class="info-box">
+    <h2>Opening Hours</h2>
+    <p>Monday - Friday: 09:00 AM - 9:00 PM</p>
+    <p>Saturday - Sunday: 08:00 AM - 9:00 PM</p>
+  </div>
+  <div class="info-box">
+    <h2>Prices & Details</h2>
+    <p>Price: €18-22 per session</p>
+    <p>Swimming Suit: Required</p>
+    <p><b>#Nature #Free Parking #Nature</b></p>
+  </div>
+</section>
+
+<section>
+  <h2><b>Feel the vibe:</b></h2>
+</section>
+    <!-- Gallery-->
+    <section class="gallery">
+      <div class="gallery-item">
+        <img src="images/Furuvik2.jpg" alt="Furuvik 1" class="gallery-image" onclick="openLightbox();currentSlide(1)">
+      </div>
+      <div class="gallery-item">
+        <img src="images/Furuvik1.jpg" alt="Furuvik 2" class="gallery-image" onclick="openLightbox();currentSlide(2)">
+      </div>
+      <div class="gallery-item">
+        <img src="images/Furuvik3.jpg" alt="Furuvik 3" class="gallery-image" onclick="openLightbox();currentSlide(3)">
+      </div>
+      <div class="gallery-item">
+        <img src="images/Furuvik5.jpg" alt="Furuvik 4" class="gallery-image" onclick="openLightbox();currentSlide(4)">
+      </div>
+      <div class="gallery-item">
+        <img src="images/Furuvik4.jpg" alt="Furuvik 5" class="gallery-image" onclick="openLightbox();currentSlide(5)">
+      </div>
+      <div class="gallery-item">
+        <img src="images/Furuvik6.jpg" alt="Furuvik 6" class="gallery-image" onclick="openLightbox();currentSlide(6)">
+      </div>
+    </section>
+    
+    <!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox-modal">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <div class="lightbox-content">
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <img id="lightbox-image" src="" alt="Large view" class="lightbox-image">
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+  </div>
+</div>
+
+<section class="content">
+  <div class="content-container second-container">
+    <p class="title"><b>Why is it a hidden gem?</b></p>
+    <p>It offers a true Finnish sauna experience, with an emphasis on traditional practices and local culture. 
+      For those wanting to immerse themselves in Finnish sauna heritage, Furuvikin is a perfect place that hasn’t been overly commercialized.
+  </p>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section class="sauna-info">
+  <div class="info-box">
+    <h2>Review: 5/5</h2>
+    <p>Furuvik’s sauna is a hidden gem. It's simple, serene, and perfect for relaxation after a busy day! 
+      I highly recommend it for those looking for peace.</p>
+    <p>Jaana Peikko, 09/2024</p>
+  </div>
+  <div class="info-box">
+    <h2>Review: 5/5</h2>
+    <p>The sauna experience is fantastic. It has this old-school charm, and the heat really helps with muscle tension. Very cozy!</p>
+    <p>Andreas Schultz, 11/2024</p>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2024 Hidden Heat.</p>
+    
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <img src="images/FacebookIcon.png" alt="Facebook Icon" />
+      </a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <img src="images/InstagramIcon.png" alt="Instagram Icon" />
+      </a>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <button class="back-to-top" onclick="scrollToTop()">
+      <img src="images/UpIcon.png">
+    </button>
+    
+    
+  </div>
+</footer>
+    
+  <script src="Javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allas Sea Pool</title>
+  <link rel="stylesheet" href="Styling.css">
+</head>
+<body>
+   <!-- Header with Navigation -->
+   <header>
+    <a href="Index.html" class="logo">
+      <img src="images/logo.png" alt="Hidden Heat Logo" class="logo">
+    </a>
+    <nav class="nav-links">
+      <a href="Sompasauna.html" class="active">Sompasauna</a>
+      <a href="Allas.html">Allas Sea Pool</a>
+      <a href="Furuvik.html">Furuvik's Sauna</a>
+    </nav>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </header>
+
+      <section class="big-picture">
+        <img src="images/Allas7.png" alt="A beautiful sauna view">
+        <div class="overlay-text">
+            <h1>Allas Sea Pool</h1>
+        </div>
+    </section>
+
+<!-- Visitor Calculator Section -->
+<section class="visitor-calculator" id="visitor-calculator">
+  <h1>Curious about the visitor flow?</h1>
+  <label for="time">What time are you planning to go? (24-hour format):</label>
+  <input type="number" id="time" min="0" max="23" placeholder="Enter hour (0-23)" required>
+  <button onclick="calculateVisitorTime()">Check Visitor Time</button>
+  <p id="result"></p>
+</section>
+
+<section class="content">
+  <div class="content-container">
+    <p><b>Relax and Unwind at Allas Sea Pool: Sauna by the Sea</b></p>
+    <p>At Allas Sea Pool, indulge in a truly unique sauna experience
+       with stunning sea views. With five saunas to choose from—three floating
+       on the water and two located in the main building. You will be immersed in
+       the ultimate combination of relaxation and breathtaking surroundings.
+       As you bask in the warmth of the sauna, enjoy panoramic views of the sparkling
+       open sea, making every visit a serene escape.</p>
+    <p>Allas Sea Pool offers something for everyone. Whether you're a swimmer, an exerciser, or just looking to relax, the heated pool and seawater pool cater to all your needs. The heated pool stays at a comfortable 27 degrees all year round, while the children’s pool is open during the summer season, making it a perfect spot for families.
+    Whether you're a local or visiting from afar, Allas Sea Pool is the ideal place to unwind, refresh, and experience the beauty of Helsinki. Come whenever suits you, and soak in the sweetest moments of this iconic seaside retreat!</p>
+    <!-- CTA Button -->
+    <a href="https://allasseapool.fi/plan-your-visit/tickets/?lang=en" target="_blank" class="cta-button">Book your escape</a>
+  </div>
+</section>
+
+<!-- Sauna Info Section -->
+<section class="sauna-info">
+  <div class="info-box">
+    <h2>Opening Hours</h2>
+    <p>Monday - Friday: 06:30 AM - 9:00 PM</p>
+    <p>Saturday - Sunday: 08:00 AM - 9:00 PM</p>
+  </div>
+  <div class="info-box">
+    <h2>Prices & Details</h2>
+    <p>Price: €18 per session</p>
+    <p>Swimming Suit: Required</p>
+    <p><b>#Accessible #Swimming #Restaurant</b></p>
+  </div>
+</section>
+
+   <!-- Gallery-->
+   <section class="gallery">
+    <div class="gallery-item">
+      <img src="images/Allas2.jpg" alt="Allas 2" class="gallery-image" onclick="openLightbox();currentSlide(1)">
+    </div>
+    <div class="gallery-item">
+      <img src="images/Allas6.jpg" alt="Allas 6" class="gallery-image" onclick="openLightbox();currentSlide(2)">
+    </div>
+    <div class="gallery-item">
+      <img src="images/Allas3.jpg" alt="Allas 3" class="gallery-image" onclick="openLightbox();currentSlide(3)">
+    </div>
+    <div class="gallery-item">
+      <img src="images/Allas5.jpg" alt="Allas 5" class="gallery-image" onclick="openLightbox();currentSlide(4)">
+    </div>
+    <div class="gallery-item">
+      <img src="images/Allas1.jpg" alt="Allas 1" class="gallery-image" onclick="openLightbox();currentSlide(5)">
+    </div>
+    <div class="gallery-item">
+      <img src="images/Allas4.jpg" alt="Allas 4" class="gallery-image" onclick="openLightbox();currentSlide(6)">
+    </div>
+  </section>
+  
+  <!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox-modal">
+<span class="close" onclick="closeLightbox()">&times;</span>
+<div class="lightbox-content">
+  <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+  <img id="lightbox-image" src="" alt="Large view" class="lightbox-image">
+  <button class="next" onclick="changeSlide(1)">&#10095;</button>
+</div>
+</div>
+
+<section class="content">
+  <div class="content-container second-container">
+    <p class="title"><b>Why is it a hidden gem?</b></p>
+    <p>While it is a well-known spot among locals, it often flies under the radar for tourists, giving it that "hidden gem" status. It offers an intimate, authentic Finnish sauna experience that is a great alternative to the more crowded tourist attractions.</p>
+  </div>
+</section>
+
+<!--Reviews-->
+<section class="sauna-info">
+  <div class="info-box">
+    <h2>Review: 4/5</h2>
+    <p>The sauna at Allas Sea Pool is incredible!</p>
+    <p>Ana Pessi, 11/2024</p>
+  </div>
+  <div class="info-box">
+    <h2>Review: 5/5</h2>
+    <p>The sauna at Allas Sea Pool is a treat! The views, the modern facilities, and the overall experience make it a great spot for both relaxation and reflection.</p>
+    <p>Saana Elo, 08/2024</p>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2024 Hidden Heat.</p>
+    
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <img src="images/FacebookIcon.png" alt="Facebook Icon" />
+      </a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <img src="images/InstagramIcon.png" alt="Instagram Icon" />
+      </a>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <button class="back-to-top" onclick="scrollToTop()">
+      <img src="images/UpIcon.png">
+    </button>
+    
+    
+  </div>
+</footer>
+
+  <script src="Javascript.js"></script>
+</body>
+</html>
