@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="Styling.css">
 </head>
 <body>
-   <!-- Header with Navigation -->
-   <header>
+  <!-- Header with Navigation -->
+  <header>
     <a href="Index.html" class="logo">
       <img src="images/logo.png" alt="Hidden Heat Logo" class="logo">
     </a>
@@ -17,10 +17,19 @@
       <a href="Allas.html">Allas Sea Pool</a>
       <a href="Furuvik.html">Furuvik's Sauna</a>
     </nav>
-    <div class="hamburger-menu" onclick="toggleMenu()">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
+    
+    <div class="header-controls">
+      <!-- Language Switcher -->
+      <div class="language-switcher">
+        <button id="languageButton" onclick="switchLanguage()">ENG</button>
+      </div>
+  
+      <!-- Hamburger Menu -->
+      <div class="hamburger-menu" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </div>
   </header>
 
@@ -114,14 +123,21 @@
   </div>
 </div>
 
-<section class="content">
-  <div class="content-container second-container">
-    <p class="title"><b>Why is it a hidden gem?</b></p>
+<section class="sauna-info">
+  <div class="info-box">
+    <h2><b>What makes it a hidden gem:</b></h2>
     <p>It offers a true Finnish sauna experience, with an emphasis on traditional practices and local culture. 
-      For those wanting to immerse themselves in Finnish sauna heritage, Furuvikin is a perfect place that hasn’t been overly commercialized.
-  </p>
+      For those wanting to immerse themselves in Finnish sauna heritage, Furuvikin is a perfect place that hasn’t been overly commercialized.</p>
   </div>
-</section>
+  <div class="info-box">
+    <h2>Fun Fact:</h2>
+    <p>Furuvik's sauna used to function as both a chicken coop and an outbuilding, and it has recently been renovated with respect for the old.
+      The interior walls of Furuvik sauna are covered with the remains of an old barn, and the interior furnishings were found at flea markets,
+      preserving the spirit of the 19th century.</p>
+  </div>
+  </section>
+
+  <section class="content"><h2 class="title"><b>What others think about us:</b></h2></section>
 
 <!-- Reviews -->
 <section class="sauna-info">

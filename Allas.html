@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="Styling.css">
 </head>
 <body>
-   <!-- Header with Navigation -->
-   <header>
+  <!-- Header with Navigation -->
+  <header>
     <a href="Index.html" class="logo">
       <img src="images/logo.png" alt="Hidden Heat Logo" class="logo">
     </a>
@@ -17,10 +17,19 @@
       <a href="Allas.html">Allas Sea Pool</a>
       <a href="Furuvik.html">Furuvik's Sauna</a>
     </nav>
-    <div class="hamburger-menu" onclick="toggleMenu()">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
+    
+    <div class="header-controls">
+      <!-- Language Switcher -->
+      <div class="language-switcher">
+        <button id="languageButton" onclick="switchLanguage()">ENG</button>
+      </div>
+  
+      <!-- Hamburger Menu -->
+      <div class="hamburger-menu" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </div>
   </header>
 
@@ -33,7 +42,7 @@
 
 <!-- Visitor Calculator Section -->
 <section class="visitor-calculator" id="visitor-calculator">
-  <h1>Curious about the visitor flow?</h1>
+  <h3>Curious about the visitor flow?</h3>
   <label for="time">What time are you planning to go? (24-hour format):</label>
   <input type="number" id="time" min="0" max="23" placeholder="Enter hour (0-23)" required>
   <button onclick="calculateVisitorTime()">Check Visitor Time</button>
@@ -42,7 +51,7 @@
 
 <section class="content">
   <div class="content-container">
-    <p><b>Relax and Unwind at Allas Sea Pool: Sauna by the Sea</b></p>
+    <h2><b>Relax and Unwind at Allas Sea Pool: Sauna by the Sea</b></h2>
     <p>At Allas Sea Pool, indulge in a truly unique sauna experience
        with stunning sea views. With five saunas to choose from—three floating
        on the water and two located in the main building. You will be immersed in
@@ -103,12 +112,18 @@
 </div>
 </div>
 
-<section class="content">
-  <div class="content-container second-container">
-    <p class="title"><b>Why is it a hidden gem?</b></p>
-    <p>While it is a well-known spot among locals, it often flies under the radar for tourists, giving it that "hidden gem" status. It offers an intimate, authentic Finnish sauna experience that is a great alternative to the more crowded tourist attractions.</p>
+<section class="sauna-info">
+  <div class="info-box">
+    <h2><b>What makes it a hidden gem:</b></h2>
+    <p>While it is a well-known spot among locals, it often flies under the radar for tourists, giving it that "hidden gem" status. It offers an intimate, authentic Finnish sauna experience that is a great alternative to the more crowded tourist attractions</p>
   </div>
-</section>
+  <div class="info-box">
+    <h2>Fun Fact:</h2>
+    <p>TThe construction project of Allas Sea Pool was financed, among other things, by crowdfunding, which raised over 810,000 euros. Over 400 people participated in the crowdfunding. There is a "hall of fame" on the wall of Allas Sea Pool, where you can see the names of all the investors.</p>
+  </div>
+  </section>
+
+<section class="content"><h2 class="title"><b>What others think about us:</b></h2></section>
 
 <!--Reviews-->
 <section class="sauna-info">
