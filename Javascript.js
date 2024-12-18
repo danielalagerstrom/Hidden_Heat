@@ -37,10 +37,10 @@ if (document.body.id === 'home') {  // Check if we are on the front page
     hero.style.backgroundImage = "url('images/morningsauna.jpg')";
     hero.querySelector('h2').textContent = "Start your day with sauna bliss!";
   } else if (now >= 12 && now < 18) {
-    hero.style.backgroundImage = "url('../images/noonsauna.png')";
+    hero.style.backgroundImage = "url('../images/noon_sauna.png')";
     hero.querySelector('h2').textContent = "Relax in the afternoon heat!";
   } else {
-    hero.style.backgroundImage = "url('../images/eveningsauna.png')";
+    hero.style.backgroundImage = "url('../images/evening_sauna.png')";
     hero.querySelector('h2').textContent = "Unwind under the evening sky!";
   }
 }
