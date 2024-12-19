@@ -40,7 +40,7 @@ if (document.body.id === 'home') {  // Check if we are on the front page
     hero.style.backgroundImage = "url('..Images/noon_sauna.png')";
     hero.querySelector('h2').textContent = "Relax in the afternoon heat!";
   } else {
-    hero.style.backgroundImage = "url('..Images/evening_sauna.png')";
+    hero.style.backgroundImage = "url(Images/evening_sauna.png)";
     hero.querySelector('h2').textContent = "Unwind under the evening sky!";
   }
 }
