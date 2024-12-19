@@ -34,7 +34,7 @@ const now = new Date().getHours();
 
 if (document.body.id === 'home') {  // Check if we are on the front page
   if (now >= 6 && now < 12) {
-    hero.style.backgroundImage = "url(Images/morningsauna.jpg')";
+    hero.style.backgroundImage = "url(Images/morningsauna.jpg)";
     hero.querySelector('h2').textContent = "Start your day with sauna bliss!";
   } else if (now >= 12 && now < 18) {
     hero.style.backgroundImage = "url('..Images/noon_sauna.png')";
